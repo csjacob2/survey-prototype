@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+  body .popover.email_error {
+    max-width: 350px;
+  }
+  body .options .option {
+    width: max-content;
+  }
+  body .options .option label > input:checked + div .img {
+    box-shadow: 1px 1px 20px #330033;
+  }
+}
+/* handheld portrait  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    font-size: 2.3em;
+  }
+  body .popover.email_error {
+    font-size: 1em;
+    max-width: 550px;
+  }
+  body #modal_thankYou {
+    font-size: 0.8em;
+  }
+  body .survey_questions .survey_question {
+    flex-direction: column;
+  }
+  body .survey_questions .options {
+    flex-direction: column;
+  }
+  body .survey_questions .options .option {
+    text-align: center;
+    width: auto;
+  }
+  body .survey_questions .options .option label > input:checked + div .img {
+    box-shadow: 1px 1px 20px #330033;
+  }
+  body .survey_questions .options .option div {
+    width: 40vw !important;
+  }
+  body .survey_questions button#btn_submit {
+    font-size: 2em;
+  }
+}
+/* handheld landscape  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body {
+    font-size: 2em;
+  }
+  body .popover.email_error {
+    font-size: 0.8em;
+    max-width: 350px;
+  }
+  body #modal_thankYou {
+    font-size: 0.8em;
+  }
+  body .survey_questions .survey_question {
+    flex-direction: column;
+  }
+  body .survey_questions .options .option {
+    width: max-content;
+  }
+  body .survey_questions .options .option label > input:checked + div .img {
+    box-shadow: 1px 1px 20px #330033;
+  }
+  body .survey_questions .options .option div {
+    width: 30vw !important;
+  }
+  body button#btn_submit {
+    font-size: 1em;
+  }
+}
+/* tablet portrait  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    font-size: 1.5em;
+  }
+  body .popover.email_error {
+    font-size: 0.8em;
+    max-width: 350px;
+  }
+  body #modal_thankYou {
+    font-size: 1em;
+  }
+  body .survey_questions .survey_question {
+    flex-direction: column;
+  }
+  body .survey_questions .options {
+    flex-direction: column;
+  }
+  body .survey_questions .options .option {
+    text-align: center;
+    width: auto;
+  }
+  body .survey_questions .options .option label > input:checked + div .img {
+    box-shadow: 1px 1px 11px #330033;
+  }
+  body .survey_questions .options .option div {
+    width: 30vw !important;
+  }
+  body button#btn_submit {
+    font-size: 1.5em;
+  }
+}
+/* tablet landscape  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    font-size: 1.5em;
+  }
+  body .popover.email_error {
+    font-size: 0.8em;
+    max-width: 350px;
+  }
+  body #modal_thankYou {
+    font-size: 1em;
+  }
+  body #modal_thankYou .modal-dialog {
+    transform: translate(0, 25%);
+  }
+  body .options .option {
+    width: max-content;
+  }
+  body .options .option label > input:checked + div .img {
+    box-shadow: 1px 1px 11px #330033;
+  }
+  body .options .option div {
+    width: 30vw !important;
+  }
+  body button#btn_submit {
+    font-size: 1.5em;
+  }
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  display: flex;
+}
+body button,
+body .btn-primary,
+body .btn {
+  border-radius: 20px;
+  background-color: #fff;
+  border: 5px solid cadetblue;
+  color: cadetblue;
+  font-weight: 600;
+}
+body button:focus,
+body .btn-primary:focus,
+body .btn:focus,
+body button:hover,
+body .btn-primary:hover,
+body .btn:hover {
+  border: 5px solid #fff;
+  color: #fff;
+  box-shadow: none;
+  background-color: cadetblue;
+}
+body button:active,
+body .btn-primary:active,
+body .btn:active {
+  background-color: #fff !important;
+  border: 5px solid cadetblue !important;
+  color: cadetblue !important;
+  box-shadow: none !important;
+}
+body button:disabled,
+body .btn-primary:disabled,
+body .btn:disabled {
+  background-color: #fff;
+  border: 5px solid cadetblue;
+  color: cadetblue;
+}
+body .modal-backdrop.show {
+  opacity: 0;
+}
+body .modal-backdrop.show.email {
+  opacity: 1;
+  background-color: #fff;
+}
+body #submit_email {
+  display: none;
+}
+body #submit_email .modal-dialog {
+  top: 25%;
+}
+body #submit_email .modal-dialog .modal-content {
+  border: none;
+}
+body #submit_email .modal-dialog .modal-content .modal-header {
+  display: none;
+}
+body #submit_email .modal-dialog .modal-content .modal-body input[type="email"] {
+  width: 100%;
+  height: 2em;
+  outline: none;
+  box-shadow: none;
+  padding-left: 10px;
+}
+body #submit_email .modal-dialog .modal-content .modal-body input[type="email"]::placeholder {
+  color: #333333;
+}
+body #submit_email .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+body #submit_email .modal-dialog .modal-content .modal-footer #btn_next {
+  width: 100%;
+}
+body .popover.email_error .popover-header {
+  display: none;
+}
+body #modal_thankYou .modal-header {
+  display: none;
+}
+body #modal_thankYou .modal-body {
+  text-align: center;
+}
+body #modal_thankYou .modal-footer {
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+body .survey_questions {
+  width: 100vw;
+  margin-top: 20px;
+}
+body .survey_questions .survey_question {
+  display: flex;
+  flex-direction: column;
+}
+body .survey_questions .survey_question p.text {
+  text-align: center;
+}
+body .survey_questions .survey_question .options {
+  display: flex;
+  justify-content: center;
+}
+body .survey_questions .survey_question .options .option {
+  padding: 0 20px;
+  text-align: center;
+}
+body .survey_questions .survey_question .options .option label > .input {
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */
+}
+body .survey_questions .survey_question .options .option label > input + div .img {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+body .survey_questions .survey_question .options .option label > input:checked + div .img {
+  overflow: hidden;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  border: 3px solid #01a89a;
+}
+body .survey_questions .survey_question .options .option div {
+  width: 30vw;
+}
+body .survey_questions .survey_question .options .option div img.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+body .survey_questions button#btn_submit {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}

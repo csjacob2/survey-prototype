@@ -1,0 +1,25 @@
+[
+  {
+    "label":"Who is your favorite Star Wars character?",
+    "questionID": "FAVSW",
+    "type": "radio",
+    "required": true,
+    "options":[
+        {
+          "key": "obiwan",
+          "value": "Obi-Wan",
+          "image": "assets/obi-wan.png"
+        },
+        {
+          "key": "hansolo",
+          "value": "Han Solo",
+          "image": "assets/han-solo.jpg"
+        },
+        {
+          "key": "rey",
+          "value": "Rey",
+          "image": "assets/rey.png"
+        }
+    ]
+  }
+]

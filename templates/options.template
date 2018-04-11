@@ -1,0 +1,9 @@
+{{#each this}}
+    <div class="option" id="{{key}}">
+        <label>
+	        <input class="input" type="" name="" value="{{key}}"/>
+	        <div><img class="img" src="{{image}}"/></div>
+	        <div class="text">{{value}}</div>
+        </label>
+    </div>
+{{/each}}

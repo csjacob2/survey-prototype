@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/functions.js"></script>
+    <script src="scripts/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body id="survey_starwars">
+
+    <form id="survey_submit" method="post">
+
+        <div id="submit_email" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Email address</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <input id="emailAddress" type="email" autofocus maxlength="30" name="emailaddress" placeholder="Enter your email address..." />
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="btn_next" type="button" class="btn btn-primary">Next</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="survey_questions">
+
+            <div class="survey_question">
+                <p class="text"></p>
+                <div class="options"></div>
+            </div>
+
+            <button id="btn_submit" class="btn button btn-primary">Submit</button>
+        </div>
+
+    </form>
+
+
+    <div class="modal fade" id="modal_thankYou" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Thank you for completing our survey!</p>
+                </div>
+
+                <div class="modal-footer">
+                    Click to exit and visit some cats.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
