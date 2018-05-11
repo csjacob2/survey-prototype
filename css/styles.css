@@ -71,6 +71,7 @@ body #submit_email .modal-dialog .modal-content .modal-body input[type="email"] 
 }
 body #submit_email .modal-dialog .modal-content .modal-body input[type="email"]::placeholder {
   color: #333333;
+  font-size: 16px;
 }
 body #submit_email .modal-dialog .modal-content .modal-footer {
   border: none;
@@ -150,9 +151,9 @@ body .survey_questions button#btn_submit {
   position: absolute;
 }
 /* handheld portrait  */
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+@media only screen and (max-width: 480px) and (orientation: portrait) {
   body {
-    font-size: 2.3em;
+    background-color: red;
   }
   body .popover.email_error {
     font-size: 1em;
@@ -170,6 +171,9 @@ body .survey_questions button#btn_submit {
   body .survey_questions .options .option {
     text-align: center;
     width: auto;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
   }
   body .survey_questions .options .option label > input:checked + div .img {
     box-shadow: 1px 1px 20px #330033;
@@ -182,7 +186,7 @@ body .survey_questions button#btn_submit {
   }
 }
 /* handheld landscape  */
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (max-width: 480px) and (orientation: landscape) {
   body {
     font-size: 2em;
   }
@@ -210,7 +214,7 @@ body .survey_questions button#btn_submit {
   }
 }
 /* tablet portrait  */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
   body {
     font-size: 1.5em;
   }
@@ -242,7 +246,7 @@ body .survey_questions button#btn_submit {
   }
 }
 /* tablet landscape  */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
   body {
     font-size: 1.5em;
   }

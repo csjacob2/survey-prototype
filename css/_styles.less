@@ -70,6 +70,7 @@ body {
 
             &::placeholder {
               color: #333333;
+              font-size: 16px;
             }
           }//input
         }//modal-body
@@ -181,12 +182,11 @@ body {
 
 /* handheld portrait  */
 @media only screen
-and (min-width: 320px)
 and (max-width: 480px)
 and (orientation: portrait) {
 
   body {
-    font-size: 2.3em;
+    background-color: red;
 
     .popover.email_error {
       font-size: 1em;
@@ -207,6 +207,9 @@ and (orientation: portrait) {
         .option {
           text-align: center;
           width: auto;
+          transform: translateX(-50%);
+          left: 50%;
+          position: relative;
 
           label > input:checked + div .img {
             // checked image styles
@@ -228,7 +231,6 @@ and (orientation: portrait) {
 
 /* handheld landscape  */
 @media only screen
-and (min-width: 320px)
 and (max-width: 480px)
 and (orientation: landscape) {
 
@@ -273,7 +275,6 @@ and (orientation: landscape) {
 
 /* tablet portrait  */
 @media only screen
-and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: portrait) {
 
@@ -320,7 +321,6 @@ and (orientation: portrait) {
 
 /* tablet landscape  */
 @media only screen
-and (min-width: 768px)
 and (max-width: 1024px)
 and (orientation: landscape) {
 
